@@ -128,15 +128,15 @@ const moveCourse = course => {
   else moveCourse(course);
 };
   
-const Course = ({ course, state }) => (
+const Course = ({ course, state, user }) => (
   <Button color={ buttonColor(state.selected.includes(course)) }
-      onClick={ () => state.toggle(course) }
-      onDoubleClick={ () => moveCourse(course) }
-      disabled={ hasConflict(course, state.selected) }
-      >
-      { getCourseTerm(course) } CS { getCourseNumber(course) }: { course.title }
-    </Button>
-  );
+    onClick={ () => state.toggle(course) }
+    onDoubleClick={ user ? () => moveCourse(course) : null }
+    disabled={ hasConflict(course, state.selected) }
+    >
+    { getCourseTerm(course) } CS { getCourseNumber(course) }: { course.title }
+  </Button>
+);
 
 const TermSelector = ({ state }) => (
   <Button.Group hasAddons>
