@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^7.0.0",
     "rbx": "^2.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-firebaseui": "^4.0.0",
     "react-scripts": "3.1.2"
   },
   "scripts": {
@@ -31,5 +33,17 @@
   },
   "devDependencies": {
     "typescript": "^3.6.3"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faraaz-Beyabani/NU-Quick-React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faraaz-Beyabani/NU-Quick-React/issues"
+  },
+  "homepage": "https://github.com/Faraaz-Beyabani/NU-Quick-React#readme"
 }
